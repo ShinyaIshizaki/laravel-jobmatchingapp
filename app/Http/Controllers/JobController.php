@@ -38,12 +38,12 @@ class JobController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Job $job)
+    public function show(Request $request)
     {
-        $param = ['id' => $job->id];
+        $id = $request->id;
 
         //jobsテーブルから該当する仕事を抽出する
-        $job = DB::select('select * from jobs where id = :id', $param);
+        $job = DB::table('jobs')->where('id', $id)->first();
     
         //仕事の詳細画面を表示する
         return view('jobs.show', ['job' => $job]);

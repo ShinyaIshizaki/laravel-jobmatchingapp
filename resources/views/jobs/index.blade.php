@@ -17,7 +17,7 @@
         <div>{{$job->backend}}</div>
         <div>{{$job->infra}}</div>
       @endforeach
-      <p><a href="/show/{{$job->id}}">Show this job</a></p>
+      <p><a href="jobs/show/?id={{$job->id}}">Show this job</a></p>
     </div>
   </div>
 @endsection

@@ -14,7 +14,7 @@
   <body>
     @yield('content')
 
-    @yield('contact')
+    <!-- @yield('contact') -->
   </body>
 
   <footer>

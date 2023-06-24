@@ -6,6 +6,6 @@
       <div>{{$job->frontend}}</div>
       <div>{{$job->backend}}</div>
       <div>{{$job->infra}}</div>
-      <p><a href="/edit">Edit this job</a></p>
+      <p><a href="#"></a></p>
     </div>
 </div>

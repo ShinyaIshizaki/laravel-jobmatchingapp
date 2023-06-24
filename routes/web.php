@@ -16,6 +16,6 @@ use App\Http\Controllers\JobController;
 
 // Route::get('/', function () {
     Route::get('/', [ JobController::class, 'index'])->name('login');
-    Route::get('/show/:id', [ JobController::class, 'show']);
+    Route::get('jobs/show/', [ JobController::class, 'show']);
     Route::post('/confirm', [ JobController::class, 'confirm']);
 // });
