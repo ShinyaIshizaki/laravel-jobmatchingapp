@@ -23,8 +23,27 @@ class JobController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
+        //パラメータを設定する
+        $params = [
+            'title' => $request->title,
+            'content' => $request->content,
+            'frontend' => $request->frontend,
+            'backend' => $request->backend,
+            'infra' => $request->infra,
+            'prefecture' => $request->prefecture,
+            'telework' => $request->telework,
+            'physical' => $request->physical,
+            'intellectual' => $request->intellectual,
+            'mental' => $request->mental,
+            'developmental' => $request->developmental,
+            'remarks' => $request->remarks,
+        ];
+
+        //DBに挿入する
+        DB::table('jobs')->insert($param);
+        return redirect('jobs.index');
     }
     
     /**

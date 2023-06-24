@@ -2,6 +2,42 @@ body {
   margin: 0;
 }
 
+.menu_area {
+  text-align: center;
+  border: 1px solid #333;
+}
+
+nav ul{
+  margin: 0 ;
+  padding: 0 ;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  width: 18%;
+  min-width: 90px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li:hover{
+  color: #E7DA66;
+}
+
+/* サブメニューは非表示にする */
+.sub {
+  display: none;
+}
+
+/* サブメニューがアクティブになったときは表示する */
+.has-sub:hover .sub {
+  display: block;
+}
+
 h1 {
   margin: 0;
   background-color: black;

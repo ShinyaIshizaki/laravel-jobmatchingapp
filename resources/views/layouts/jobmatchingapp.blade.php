@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@yield('title')</title>
-  <link rel="stylesheet" href="{{ asset('/css/styles.css') }}">
-</head>
-<body>
-  <header>
-    @yield('header')
-  </header>
+@extends('layouts.jobmatchingapp')
 
-  <body>
-    @yield('content')
+@yield('header')
 
-    <!-- @yield('contact') -->
-  </body>
+@yield('content')
 
-  <footer>
-    @yield('footer')
-  </footer>
-</html>
+<!-- @yield('contact') -->
+
+@yield('footer')

@@ -4,6 +4,19 @@
 
 @section('header')
   <h1>Job Matching App</h1>
+  <nav class="menu_area">
+    <ul>
+      <li><a href="{{ route('home') }}">Home</a></li>
+      <li class="has-sub"><a href="">Users</a>
+        <ul class="sub">
+          <li><a href="">Login</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </li>
+      <li><a href="">About</a></li>
+      <li><a href="">News</a></li>
+    </ul>
+  </nav>
 @endsection
 
 @section('content')
