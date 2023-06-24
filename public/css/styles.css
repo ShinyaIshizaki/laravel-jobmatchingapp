@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.jobTable {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+}
+
+.job {
+  border: solid 1px black;
+}
+
+.contactform {
+  text-align: center;
+  width: 100%;
+}
+
+.contactform > .msg > input {
+  height: 100px;
+}
+
+input {
+  text-align: center;
+  width: 90%;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  position: sticky;
+  margin-top: 10px;
+}
